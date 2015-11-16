@@ -1,7 +1,6 @@
-h1 Upload new documents
+h1 Upload a document
 
 =form_tag documents_path, multipart: true do
-  =text_field name: "name", placeholder: "Add name"
+  =text_area_tag :document_name, nil, placeholder:"Add name", class: "form-control"
   =file_field_tag "document"
-  button.btn.btn-success "Upload"
-end
+  button.btn.btn-success Upload
